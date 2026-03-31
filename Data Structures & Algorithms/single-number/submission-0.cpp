@@ -1,0 +1,11 @@
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int v=0;
+
+        for(auto num: nums){
+            v = v^num;
+        }
+        return v;
+    }
+};
